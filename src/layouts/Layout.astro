@@ -15,6 +15,12 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<!-- Open Graph Metadata -->
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content="En Bichitos Petshop vas a encontrar todo lo que necesitas para tus animales: alimentos, juguetes, y más. ¡Pásate por nuestra web y mirá el catálogo!" />
+		<meta property="og:image" content="https://www.bichitospetshop.com/public/bichitos-logo.webp" /> <!-- Cambia esto por la URL de tu imagen -->
+		<meta property="og:url" content="https://www.bichitospetshop.com" /> <!-- Cambia esto por tu URL -->
+		<meta property="og:type" content="website" />
 	</head>
 	<body>
 		<slot />
